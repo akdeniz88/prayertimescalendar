@@ -2,7 +2,7 @@
   {
     "uke": 40,
     "gregOrisk": "4–10 okt 2027",
-    "hijri": "12–18 Rabi al-Thani 1449",
+    "hijri": "4–10 Jumada al-Awwal 1449",
     "tema": "Akhira som motivasjon – livet er en test",
     "spesiell": null,
     "quran": {
@@ -19,7 +19,7 @@
   {
     "uke": 41,
     "gregOrisk": "11–17 okt 2027",
-    "hijri": "19–25 Rabi al-Thani 1449",
+    "hijri": "11–17 Jumada al-Awwal 1449",
     "tema": "Planlegging og Tawakkul – aktivt håp",
     "spesiell": null,
     "quran": {
@@ -36,7 +36,7 @@
   {
     "uke": 42,
     "gregOrisk": "18–24 okt 2027",
-    "hijri": "26 Rabi al-Thani – 2 Jumada al-Awwal 1449",
+    "hijri": "18–24 Jumada al-Awwal 1449",
     "tema": "Familie og forsoning",
     "spesiell": null,
     "quran": {
@@ -53,7 +53,7 @@
   {
     "uke": 43,
     "gregOrisk": "25–31 okt 2027",
-    "hijri": "4–10 Jumada al-Awwal 1449",
+    "hijri": "25 Jumada al-Awwal – 1 Jumada al-Thani 1449",
     "tema": "Å bygge ny identitet som muslim",
     "spesiell": "Klokken stilles tilbake til normaltid (CET) søndag 31. oktober.",
     "quran": {
@@ -70,7 +70,7 @@
   {
     "uke": 44,
     "gregOrisk": "1–7 nov 2027",
-    "hijri": "11–17 Jumada al-Awwal 1449",
+    "hijri": "2–8 Jumada al-Thani 1449",
     "tema": "Halal levebrød – verdighet gjennom ærlig arbeid",
     "spesiell": null,
     "quran": {
@@ -87,7 +87,7 @@
   {
     "uke": 45,
     "gregOrisk": "8–14 nov 2027",
-    "hijri": "18–24 Jumada al-Awwal 1449",
+    "hijri": "9–15 Jumada al-Thani 1449",
     "tema": "Ummah – Fellesskap som ressurs",
     "spesiell": null,
     "quran": {
@@ -104,7 +104,7 @@
   {
     "uke": 46,
     "gregOrisk": "15–21 nov 2027",
-    "hijri": "25 Jumada al-Awwal – 1 Jumada al-Thani 1449",
+    "hijri": "16–22 Jumada al-Thani 1449",
     "tema": "Miljø og venner – Hijra fra det negative",
     "spesiell": null,
     "quran": {
@@ -121,7 +121,7 @@
   {
     "uke": 47,
     "gregOrisk": "22–28 nov 2027",
-    "hijri": "2–8 Jumada al-Thani 1449",
+    "hijri": "23–29 Jumada al-Thani 1449",
     "tema": "Islah – Å gjøre opp for seg",
     "spesiell": null,
     "quran": {
@@ -138,7 +138,24 @@
   {
     "uke": 48,
     "gregOrisk": "29 nov – 5 des 2027",
-    "hijri": "9–15 Jumada al-Thani 1449",
+    "hijri": "1–7 Rajab 1449",
+    "tema": "★ Rajab begynner – Hellig måneds begynnelse",
+    "spesiell": "1. Rajab 1449 AH starter 29. november 2027. Rajab er en av de fire hellige månedene.",
+    "quran": {
+      "tekst": "Sannelig, Allah og Hans engler sender sin velsignelse over profeten. Å dere som tror! Send velsignelser over ham og hils ham med en verdig hilsen.",
+      "referanse": "Al-Ahzab 33:56"
+    },
+    "hadith": {
+      "tekst": "Å Allah! Velsign oss i Rajab og Sha'ban, og la oss nå Ramadan.",
+      "kilde": "Musnad Ahmad, nr. 2346 (fra Anas ibn Malik)"
+    },
+    "visdom": "Rajab er måneden for frøet. Sha'ban for vanningen. Ramadan for høsten. Du er tre måneder unna årets største mulighet. Begynn forberedelsen nå.",
+    "visdomKilde": "Tradisjonell islamsk lærdomstradisjon om de tre månedene"
+  },
+  {
+    "uke": 49,
+    "gregOrisk": "6–12 des 2027",
+    "hijri": "8–14 Rajab 1449",
     "tema": "Dua – Bønn som livslang praksis",
     "spesiell": null,
     "quran": {
@@ -153,9 +170,9 @@
     "visdomKilde": "Inspirert av Ibn Ata'illah al-Iskandari, Al-Hikam"
   },
   {
-    "uke": 49,
-    "gregOrisk": "6–12 des 2027",
-    "hijri": "16–22 Jumada al-Thani 1449",
+    "uke": 50,
+    "gregOrisk": "13–19 des 2027",
+    "hijri": "15–21 Rajab 1449",
     "tema": "Frihet og dens ansvar i islam",
     "spesiell": null,
     "quran": {
@@ -170,9 +187,9 @@
     "visdomKilde": "Inspirert av islamsk menneskeverdslære (Karama)"
   },
   {
-    "uke": 50,
-    "gregOrisk": "13–19 des 2027",
-    "hijri": "23–29 Jumada al-Thani 1449",
+    "uke": 51,
+    "gregOrisk": "20–26 des 2027",
+    "hijri": "22–28 Rajab 1449",
     "tema": "Å se tilbake med takknemlighet",
     "spesiell": null,
     "quran": {
@@ -187,26 +204,9 @@
     "visdomKilde": "Inspirert av islamsk muhasabah-tradisjon"
   },
   {
-    "uke": 51,
-    "gregOrisk": "20–26 des 2027",
-    "hijri": "1–7 Rajab 1449",
-    "tema": "★ Rajab begynner – Hellig måneds begynnelse",
-    "spesiell": "1. Rajab 1449 AH starter ca. 20. desember 2027. Rajab er en av de fire hellige månedene.",
-    "quran": {
-      "tekst": "Sannelig, Allah og Hans engler sender sin velsignelse over profeten. Å dere som tror! Send velsignelser over ham og hils ham med en verdig hilsen.",
-      "referanse": "Al-Ahzab 33:56"
-    },
-    "hadith": {
-      "tekst": "Å Allah! Velsign oss i Rajab og Sha'ban, og la oss nå Ramadan.",
-      "kilde": "Musnad Ahmad, nr. 2346 (fra Anas ibn Malik)"
-    },
-    "visdom": "Rajab er måneden for frøet. Sha'ban for vanningen. Ramadan for høsten. Du er tre måneder unna årets største mulighet. Begynn forberedelsen nå.",
-    "visdomKilde": "Tradisjonell islamsk lærdomstradisjon om de tre månedene"
-  },
-  {
     "uke": 52,
     "gregOrisk": "27 des 2027 – 2 jan 2028",
-    "hijri": "8–14 Rajab 1449",
+    "hijri": "29 Rajab – 5 Sha'ban 1449",
     "tema": "Ny begynnelse – Årsavslutning og håp",
     "spesiell": "Kalenderåret 2027 avsluttes. Det siste oppslaget i kalenderen.",
     "quran": {

@@ -2,9 +2,9 @@
   {
     "uke": 1,
     "gregOrisk": "4–10 jan 2027",
-    "hijri": "5–11 Rajab 1448",
+    "hijri": "26 Rajab – 2 Sha'ban 1448",
     "tema": "Niyyah – Hensikt og retning",
-    "spesiell": null,
+    "spesiell": "Sha'ban begynner 9. jan.",
     "quran": {
       "tekst": "Allah pålegger ikke noen sjel mer enn den kan bære. Den får det den fortjener, og den bærer det den har fortjent. Herre, straff oss ikke hvis vi glemmer eller begår feil. Herre, legg ikke på oss en byrde slik som Du la den på dem som levde før oss. Herre, legg ikke på oss det vi ikke kan bære. Tilgi oss, ha nåde med oss! Du er vår Herre og Beskytter. Hjelp oss mot de vantro.",
       "referanse": "Al-Baqarah 2:286"
@@ -19,7 +19,7 @@
   {
     "uke": 2,
     "gregOrisk": "11–17 jan 2027",
-    "hijri": "12–18 Rajab 1448",
+    "hijri": "3–9 Sha'ban 1448",
     "tema": "Muhasabah – Selvoppgjør",
     "spesiell": null,
     "quran": {
@@ -36,7 +36,7 @@
   {
     "uke": 3,
     "gregOrisk": "18–24 jan 2027",
-    "hijri": "19–25 Rajab 1448",
+    "hijri": "10–16 Sha'ban 1448",
     "tema": "Å anerkjenne sine feil uten fortvilelse",
     "spesiell": null,
     "quran": {
@@ -53,7 +53,7 @@
   {
     "uke": 4,
     "gregOrisk": "25–31 jan 2027",
-    "hijri": "26 Rajab – 2 Sha'ban 1448",
+    "hijri": "17–23 Sha'ban 1448",
     "tema": "Tawbah – Den alltid åpne porten",
     "spesiell": null,
     "quran": {
@@ -70,60 +70,9 @@
   {
     "uke": 5,
     "gregOrisk": "1–7 feb 2027",
-    "hijri": "3–9 Sha'ban 1448",
-    "tema": "Sidq – Ærlighet med seg selv",
-    "spesiell": "Sha'ban begynner 30. jan",
-    "quran": {
-      "tekst": "Å dere som tror! Frykt Allah og vær blant de sannferdige.",
-      "referanse": "At-Tawbah 9:119"
-    },
-    "hadith": {
-      "tekst": "Sannferdighet leder til fromhet, og fromhet leder til Paradiset. En mann fortsetter å tale sant og å streve etter sannhet til han skrives ned hos Allah som sannferdig. Løgn leder til ondskap, og ondskap leder til Ilden. En mann fortsetter å lyve til han skrives ned hos Allah som løgner.",
-      "kilde": "Sahih al-Bukhari, nr. 6094"
-    },
-    "visdom": "Den farligste løgnen er den du forteller deg selv. Å møte sin sannhet med åpne øyne er en form for mot som overgar mange slag.",
-    "visdomKilde": "Inspirert av Imam al-Nawawi, Riyad as-Salihin"
-  },
-  {
-    "uke": 6,
-    "gregOrisk": "8–14 feb 2027",
-    "hijri": "10–16 Sha'ban 1448",
-    "tema": "Kibr og nafs – Møtet med egoet",
-    "spesiell": null,
-    "quran": {
-      "tekst": "Og jeg fritar ikke meg selv fra anklager; sjelen er sannelig tilbøyelig til det onde – unntatt den som min Herre viser nåde. Min Herre er Tilgivende, Nåderik.",
-      "referanse": "Yusuf 12:53"
-    },
-    "hadith": {
-      "tekst": "Ingen vil tre inn i Paradiset som har et fnugg av hovmod i sitt hjerte. En mann sa: 'Men en mann elsker å ha fine klær og fine sandaler.' Profeten sa: 'Allah er vakker og elsker skjønnhet. Hovmod er å avvise sannheten og se ned på mennesker.'",
-      "kilde": "Sahih Muslim, nr. 91"
-    },
-    "visdom": "Nafs er ikke fienden din – den er den uopplærte delen av deg. Kjemp mot den med kunnskap, ikke hat.",
-    "visdomKilde": "Al-Ghazali, Kimiya as-Sa'adah"
-  },
-  {
-    "uke": 7,
-    "gregOrisk": "15–21 feb 2027",
-    "hijri": "17–23 Sha'ban 1448",
-    "tema": "Mine valg, mitt ansvar",
-    "spesiell": null,
-    "quran": {
-      "tekst": "Og at mennesket ikke skal oppnå annet enn det det selv har strebet etter, og at dets streben snart vil bli sett.",
-      "referanse": "An-Najm 53:39–40"
-    },
-    "hadith": {
-      "tekst": "Vokt deg for de syv ødeleggende synder. De spurte: 'Hva er de, Allahs Budbærer?' Han sa: 'Å sette noe ved siden av Allah, trolldom, å drepe en sjel som Allah har forbudt å drepe uten rettmessig grunn, å spise renter, å spise en foreldreløs persons eiendom, å flykte fra slagmarken, og å anklage uskyldige troende kvinner for utukt.'",
-      "kilde": "Sahih al-Bukhari, nr. 2766"
-    },
-    "visdom": "Ansvarlighet er ikke straff – det er verdighet. Den som eier sine handlinger, eier også sin fremtid.",
-    "visdomKilde": "Inspirert av islamsk etikk (akhlaq)"
-  },
-  {
-    "uke": 8,
-    "gregOrisk": "22–28 feb 2027",
     "hijri": "24–30 Sha'ban 1448",
     "tema": "Sha'ban: Forberedelse og renselse",
-    "spesiell": "Ramadan begynner 28. feb (søndag)",
+    "spesiell": "Siste Sha'ban-uke. Ramadan begynner 8. feb (mandag).",
     "quran": {
       "tekst": "Rettferdiggjøringen av ens sjel skal ikke komme ved at man priser seg selv. Allah vet best hvem som er gudfryktig.",
       "referanse": "An-Najm 53:32"
@@ -136,9 +85,9 @@
     "visdomKilde": "Tradisjonelt islamsk ordtak"
   },
   {
-    "uke": 9,
-    "gregOrisk": "1–7 mar 2027",
-    "hijri": "2–8 Ramadan 1448",
+    "uke": 6,
+    "gregOrisk": "8–14 feb 2027",
+    "hijri": "1–7 Ramadan 1448",
     "tema": "★ RAMADAN – Tazkiyah: Renselse av sjelen",
     "spesiell": "Ramadan uke 1. Suhur/Iftar-tider aktivert i bønnetabellen.",
     "quran": {
@@ -153,9 +102,9 @@
     "visdomKilde": "Inspirert av Sahl al-Tustari, Tafsir"
   },
   {
-    "uke": 10,
-    "gregOrisk": "8–14 mar 2027",
-    "hijri": "9–15 Ramadan 1448",
+    "uke": 7,
+    "gregOrisk": "15–21 feb 2027",
+    "hijri": "8–14 Ramadan 1448",
     "tema": "★ RAMADAN – Maghfirah: Tilgivelsens uke",
     "spesiell": "Ramadan uke 2.",
     "quran": {
@@ -170,9 +119,9 @@
     "visdomKilde": "Ibn Ata'illah al-Iskandari, Al-Hikam"
   },
   {
-    "uke": 11,
-    "gregOrisk": "15–21 mar 2027",
-    "hijri": "16–22 Ramadan 1448",
+    "uke": 8,
+    "gregOrisk": "22–28 feb 2027",
+    "hijri": "15–21 Ramadan 1448",
     "tema": "★ RAMADAN – Midten av måneden: Quranen som kompanjong",
     "spesiell": "Ramadan uke 3.",
     "quran": {
@@ -187,11 +136,11 @@
     "visdomKilde": "Inspirert av Hasan al-Basri"
   },
   {
-    "uke": 12,
-    "gregOrisk": "22–28 mar 2027",
-    "hijri": "23–29 Ramadan 1448",
+    "uke": 9,
+    "gregOrisk": "1–7 mar 2027",
+    "hijri": "22–28 Ramadan 1448",
     "tema": "★ RAMADAN – Laylat al-Qadr: De siste ti nettene",
-    "spesiell": "Laylat al-Qadr ca. 26. mars (27. Ramadan). Natt til fredag.",
+    "spesiell": "Ramadan uke 4. Laylat al-Qadr ca. 6. mars (natt til lørdag, 27. Ramadan).",
     "quran": {
       "tekst": "Sannelig, Vi sendte den ned i Kraftens natt. Og hva vet du om Kraftens natt? Kraftens natt er bedre enn tusen måneder. I den stiger englene ned, og Ånden, med sin Herres tillatelse, for ethvert anliggende. Den er fred – til soloppgangen gryr.",
       "referanse": "Al-Qadr 97:1–5"
@@ -204,11 +153,11 @@
     "visdomKilde": "Tradisjonell islamsk refleksjon"
   },
   {
-    "uke": 13,
-    "gregOrisk": "29 mar – 4 apr 2027",
-    "hijri": "30 Ramadan / 1–7 Shawwal 1448",
+    "uke": 10,
+    "gregOrisk": "8–14 mar 2027",
+    "hijri": "29 Ramadan – 6 Shawwal 1448",
     "tema": "★ EID AL-FITR – Ny start: Seier og takknemlighet",
-    "spesiell": "EID AL-FITR 30. mars 2027. Ramadan avsluttes. Tema: Ny begynnelse.",
+    "spesiell": "EID AL-FITR 9. mars 2027. Ramadan avsluttes. Tema: Ny begynnelse.",
     "quran": {
       "tekst": "Allah ønsker for dere det som er lett, ikke det som er tungt. Fullfør perioden, lovpris Allah for Hans veiledning til dere, og kanskje vil dere takke Ham.",
       "referanse": "Al-Baqarah 2:185"
@@ -219,5 +168,56 @@
     },
     "visdom": "Eid er ikke bare for de frie. Det er for enhver sjel som kjempet gjennom måneden. Du festet, du ba, du holdt ut. Det er seier.",
     "visdomKilde": "Inspirert av islamsk tradisjon"
+  },
+  {
+    "uke": 11,
+    "gregOrisk": "15–21 mar 2027",
+    "hijri": "7–13 Shawwal 1448",
+    "tema": "Sidq – Ærlighet med seg selv",
+    "spesiell": null,
+    "quran": {
+      "tekst": "Å dere som tror! Frykt Allah og vær blant de sannferdige.",
+      "referanse": "At-Tawbah 9:119"
+    },
+    "hadith": {
+      "tekst": "Sannferdighet leder til fromhet, og fromhet leder til Paradiset. En mann fortsetter å tale sant og å streve etter sannhet til han skrives ned hos Allah som sannferdig. Løgn leder til ondskap, og ondskap leder til Ilden. En mann fortsetter å lyve til han skrives ned hos Allah som løgner.",
+      "kilde": "Sahih al-Bukhari, nr. 6094"
+    },
+    "visdom": "Den farligste løgnen er den du forteller deg selv. Å møte sin sannhet med åpne øyne er en form for mot som overgar mange slag.",
+    "visdomKilde": "Inspirert av Imam al-Nawawi, Riyad as-Salihin"
+  },
+  {
+    "uke": 12,
+    "gregOrisk": "22–28 mar 2027",
+    "hijri": "14–20 Shawwal 1448",
+    "tema": "Kibr og nafs – Møtet med egoet",
+    "spesiell": null,
+    "quran": {
+      "tekst": "Og jeg fritar ikke meg selv fra anklager; sjelen er sannelig tilbøyelig til det onde – unntatt den som min Herre viser nåde. Min Herre er Tilgivende, Nåderik.",
+      "referanse": "Yusuf 12:53"
+    },
+    "hadith": {
+      "tekst": "Ingen vil tre inn i Paradiset som har et fnugg av hovmod i sitt hjerte. En mann sa: 'Men en mann elsker å ha fine klær og fine sandaler.' Profeten sa: 'Allah er vakker og elsker skjønnhet. Hovmod er å avvise sannheten og se ned på mennesker.'",
+      "kilde": "Sahih Muslim, nr. 91"
+    },
+    "visdom": "Nafs er ikke fienden din – den er den uopplærte delen av deg. Kjemp mot den med kunnskap, ikke hat.",
+    "visdomKilde": "Al-Ghazali, Kimiya as-Sa'adah"
+  },
+  {
+    "uke": 13,
+    "gregOrisk": "29 mar – 4 apr 2027",
+    "hijri": "21–27 Shawwal 1448",
+    "tema": "Mine valg, mitt ansvar",
+    "spesiell": null,
+    "quran": {
+      "tekst": "Og at mennesket ikke skal oppnå annet enn det det selv har strebet etter, og at dets streben snart vil bli sett.",
+      "referanse": "An-Najm 53:39–40"
+    },
+    "hadith": {
+      "tekst": "Vokt deg for de syv ødeleggende synder. De spurte: 'Hva er de, Allahs Budbærer?' Han sa: 'Å sette noe ved siden av Allah, trolldom, å drepe en sjel som Allah har forbudt å drepe uten rettmessig grunn, å spise renter, å spise en foreldreløs persons eiendom, å flykte fra slagmarken, og å anklage uskyldige troende kvinner for utukt.'",
+      "kilde": "Sahih al-Bukhari, nr. 2766"
+    },
+    "visdom": "Ansvarlighet er ikke straff – det er verdighet. Den som eier sine handlinger, eier også sin fremtid.",
+    "visdomKilde": "Inspirert av islamsk etikk (akhlaq)"
   }
 ]

@@ -2,24 +2,24 @@
   {
     "uke": 27,
     "gregOrisk": "5–11 jul 2027",
-    "hijri": "10–16 Muharram 1449",
-    "tema": "★ ASHURA – Nåde, faste og Musa (AS)",
-    "spesiell": "Ashura – 10. Muharram 1449, ca. 5. juli 2027 (mandag).",
+    "hijri": "1–7 Safar 1449",
+    "tema": "Shukr – Takknemlighet midt i prøvelsen",
+    "spesiell": null,
     "quran": {
-      "tekst": "Og Vi reddet Israels barn fra den nedverdigende straffen, fra Farao – han var overmodig og en av de overdrevne.",
-      "referanse": "Ad-Dukhan 44:30–31"
+      "tekst": "Og husker dere når deres Herre kunngjorde: 'Hvis dere er takknemlige, vil Jeg gi dere mer. Men hvis dere er utakknemlige, sannelig, Min straff er hard.'",
+      "referanse": "Ibrahim 14:7"
     },
     "hadith": {
-      "tekst": "Profeten ﷺ kom til Medina og fant at jødene faster på Ashura-dagen. Han spurte: 'Hva er dette?' De sa: 'Det er en god dag – det er dagen da Allah reddet Israels barn fra sin fiende, og Musa fastet den.' Han sa: 'Jeg har mer rett til Musa enn dere,' og han fastet og beordret andre til å faste.",
-      "kilde": "Sahih al-Bukhari, nr. 2004"
+      "tekst": "Allah er tilfreds med sin tjeneste når han spiser og takker Ham for det, og drikker og takker Ham for det.",
+      "kilde": "Sahih Muslim, nr. 2734"
     },
-    "visdom": "Ashura minner om at Allah griper inn for dem som er undertrykket. Havet deler seg. Murer faller. Historien er full av Allahs inngripen for dem som holdt fast i tro.",
-    "visdomKilde": "Inspirert av tafsir-tradisjon om Musa (AS)"
+    "visdom": "Takknemlighet er ikke å late som alt er bra. Det er å finne det som fortsatt er bra midt i det som er vanskelig. Det er en disiplin – og det forandrer hjertet.",
+    "visdomKilde": "Inspirert av Al-Ghazali, Ihya Ulum ad-Din"
   },
   {
     "uke": 28,
     "gregOrisk": "12–18 jul 2027",
-    "hijri": "17–23 Muharram 1449",
+    "hijri": "8–14 Safar 1449",
     "tema": "Allahs navn: Al-Rahman og Al-Rahim",
     "spesiell": null,
     "quran": {
@@ -36,7 +36,7 @@
   {
     "uke": 29,
     "gregOrisk": "19–25 jul 2027",
-    "hijri": "24–30 Muharram 1449",
+    "hijri": "15–21 Safar 1449",
     "tema": "Mannen som drepte 99 – Ingen er fortapt",
     "spesiell": null,
     "quran": {
@@ -53,9 +53,9 @@
   {
     "uke": 30,
     "gregOrisk": "26 jul – 1 aug 2027",
-    "hijri": "1–7 Safar 1449",
+    "hijri": "22–28 Safar 1449",
     "tema": "Profetens ﷺ barmhjertighet mot syndere",
-    "spesiell": "Safar begynner 26. juli.",
+    "spesiell": null,
     "quran": {
       "tekst": "Vi sendte deg ikke annet enn som en nåde for all verden.",
       "referanse": "Al-Anbiya 21:107"
@@ -70,7 +70,7 @@
   {
     "uke": 31,
     "gregOrisk": "2–8 aug 2027",
-    "hijri": "8–14 Safar 1449",
+    "hijri": "29 Safar – 6 Rabi al-Awwal 1449",
     "tema": "Tilgivelse av andre – frigjøring av seg selv",
     "spesiell": null,
     "quran": {
@@ -87,60 +87,9 @@
   {
     "uke": 32,
     "gregOrisk": "9–15 aug 2027",
-    "hijri": "15–21 Safar 1449",
-    "tema": "Å gjenoppbygge tillit og relasjoner",
-    "spesiell": null,
-    "quran": {
-      "tekst": "Og hold fast i Allahs reb, alle sammen, og vær ikke splittet. Husk Allahs gunst over dere da dere var fiender og Han forente hjertene deres.",
-      "referanse": "Ali Imran 3:103"
-    },
-    "hadith": {
-      "tekst": "Den troende for den troende er som en bygning: de ulike delene forsterker hverandre.",
-      "kilde": "Sahih al-Bukhari, nr. 481"
-    },
-    "visdom": "Tillit brytes på sekunder og bygges opp gjennom år. Men hvert løfte holdt, hvert ærlig ord sagt, er én stein i veggen. Start med én stein i dag.",
-    "visdomKilde": "Inspirert av klassisk islamsk etikk (Adab)"
-  },
-  {
-    "uke": 33,
-    "gregOrisk": "16–22 aug 2027",
-    "hijri": "22–28 Safar 1449",
-    "tema": "Ilm – Kunnskap som vei til forandring",
-    "spesiell": null,
-    "quran": {
-      "tekst": "...Si: 'Er de som vet og de som ikke vet like?' Det er bare folk med forstand som lar seg formane.",
-      "referanse": "Az-Zumar 39:9"
-    },
-    "hadith": {
-      "tekst": "Å søke kunnskap er en plikt for enhver muslim.",
-      "kilde": "Sunan Ibn Majah, nr. 224"
-    },
-    "visdom": "Å lese en bok i en fengselscelle er en politisk handling. Det er å si: 'Jeg nekter å la dette stedet gjøre meg til et mindre menneske.'",
-    "visdomKilde": "Inspirert av Malcolm X (el-Hajj Malik el-Shabazz) og islamsk lærdomstradisjon"
-  },
-  {
-    "uke": 34,
-    "gregOrisk": "23–29 aug 2027",
-    "hijri": "29 Safar – 6 Rabi al-Awwal 1449",
-    "tema": "Khidmah – Å tjene andre",
-    "spesiell": null,
-    "quran": {
-      "tekst": "Og gjør godt – sannelig Allah elsker de som gjør godt.",
-      "referanse": "Al-Baqarah 2:195"
-    },
-    "hadith": {
-      "tekst": "Den beste blant dere er den som er best i sin opptreden.",
-      "kilde": "Sahih al-Bukhari, nr. 6035"
-    },
-    "visdom": "Service er ikke underkastelse – det er makt. Den som tjener andre finner seg selv sterkere, ikke svakere. Du kan tjene dine medfanger, dine vakter, din familie utenfra med et brev. Start i dag.",
-    "visdomKilde": "Inspirert av Imam al-Shafi'i"
-  },
-  {
-    "uke": 35,
-    "gregOrisk": "30 aug – 5 sep 2027",
     "hijri": "7–13 Rabi al-Awwal 1449",
     "tema": "★ Mawlid-tid – Profetens ﷺ nobilitet og karakter",
-    "spesiell": "Mawlid al-Nabi rundt 12. Rabi al-Awwal ≈ 13. september (W37). Denne uken fokuserer på karakteren som kjennetegnet ham.",
+    "spesiell": "Mawlid al-Nabi 12. Rabi al-Awwal ≈ 14. august 2027 (lørdag).",
     "quran": {
       "tekst": "Og sannelig, du er av en opphøyet karakter.",
       "referanse": "Al-Qalam 68:4"
@@ -153,8 +102,8 @@
     "visdomKilde": "Muwatta Malik, nr. 1614 – Profetens uttalelse om akhlaq"
   },
   {
-    "uke": 36,
-    "gregOrisk": "6–12 sep 2027",
+    "uke": 33,
+    "gregOrisk": "16–22 aug 2027",
     "hijri": "14–20 Rabi al-Awwal 1449",
     "tema": "Profetens ﷺ tilgivelse ved Mekkas fall",
     "spesiell": null,
@@ -170,11 +119,11 @@
     "visdomKilde": "Islamsk sira-tradisjon om Fath Makkah"
   },
   {
-    "uke": 37,
-    "gregOrisk": "13–19 sep 2027",
+    "uke": 34,
+    "gregOrisk": "23–29 aug 2027",
     "hijri": "21–27 Rabi al-Awwal 1449",
     "tema": "Ihsan – Fortreffelighet i det hverdagslige",
-    "spesiell": "Mawlid al-Nabi ca. 13. september (12. Rabi al-Awwal 1449).",
+    "spesiell": null,
     "quran": {
       "tekst": "Sannelig, Allah befaler rettferdighet, veldedighet og gavmildhet mot slektningene, og Han forbyr uanstendighet, det forkastelige og urett. Han formaner dere så dere kan ta det til hjerte.",
       "referanse": "An-Nahl 16:90"
@@ -187,9 +136,60 @@
     "visdomKilde": "Inspirert av Hadith Jibril, Sahih Muslim"
   },
   {
+    "uke": 35,
+    "gregOrisk": "30 aug – 5 sep 2027",
+    "hijri": "28 Rabi al-Awwal – 4 Rabi al-Thani 1449",
+    "tema": "Å gjenoppbygge tillit og relasjoner",
+    "spesiell": null,
+    "quran": {
+      "tekst": "Og hold fast i Allahs reb, alle sammen, og vær ikke splittet. Husk Allahs gunst over dere da dere var fiender og Han forente hjertene deres.",
+      "referanse": "Ali Imran 3:103"
+    },
+    "hadith": {
+      "tekst": "Den troende for den troende er som en bygning: de ulike delene forsterker hverandre.",
+      "kilde": "Sahih al-Bukhari, nr. 481"
+    },
+    "visdom": "Tillit brytes på sekunder og bygges opp gjennom år. Men hvert løfte holdt, hvert ærlig ord sagt, er én stein i veggen. Start med én stein i dag.",
+    "visdomKilde": "Inspirert av klassisk islamsk etikk (Adab)"
+  },
+  {
+    "uke": 36,
+    "gregOrisk": "6–12 sep 2027",
+    "hijri": "5–11 Rabi al-Thani 1449",
+    "tema": "Ilm – Kunnskap som vei til forandring",
+    "spesiell": null,
+    "quran": {
+      "tekst": "...Si: 'Er de som vet og de som ikke vet like?' Det er bare folk med forstand som lar seg formane.",
+      "referanse": "Az-Zumar 39:9"
+    },
+    "hadith": {
+      "tekst": "Å søke kunnskap er en plikt for enhver muslim.",
+      "kilde": "Sunan Ibn Majah, nr. 224"
+    },
+    "visdom": "Å lese en bok i en fengselscelle er en politisk handling. Det er å si: 'Jeg nekter å la dette stedet gjøre meg til et mindre menneske.'",
+    "visdomKilde": "Inspirert av Malcolm X (el-Hajj Malik el-Shabazz) og islamsk lærdomstradisjon"
+  },
+  {
+    "uke": 37,
+    "gregOrisk": "13–19 sep 2027",
+    "hijri": "12–18 Rabi al-Thani 1449",
+    "tema": "Khidmah – Å tjene andre",
+    "spesiell": null,
+    "quran": {
+      "tekst": "Og gjør godt – sannelig Allah elsker de som gjør godt.",
+      "referanse": "Al-Baqarah 2:195"
+    },
+    "hadith": {
+      "tekst": "Den beste blant dere er den som er best i sin opptreden.",
+      "kilde": "Sahih al-Bukhari, nr. 6035"
+    },
+    "visdom": "Service er ikke underkastelse – det er makt. Den som tjener andre finner seg selv sterkere, ikke svakere. Du kan tjene dine medfanger, dine vakter, din familie utenfra med et brev. Start i dag.",
+    "visdomKilde": "Inspirert av Imam al-Shafi'i"
+  },
+  {
     "uke": 38,
     "gregOrisk": "20–26 sep 2027",
-    "hijri": "28 Rabi al-Awwal – 4 Rabi al-Thani 1449",
+    "hijri": "19–25 Rabi al-Thani 1449",
     "tema": "Tawbah etter tilbakefall – fortsett likevel",
     "spesiell": null,
     "quran": {
@@ -206,7 +206,7 @@
   {
     "uke": 39,
     "gregOrisk": "27 sep – 3 okt 2027",
-    "hijri": "5–11 Rabi al-Thani 1449",
+    "hijri": "26 Rabi al-Thani – 3 Jumada al-Awwal 1449",
     "tema": "Kvartal-refleksjon – Hvem har jeg blitt?",
     "spesiell": "Avslutning av tema 3. Muhasabah-uke.",
     "quran": {

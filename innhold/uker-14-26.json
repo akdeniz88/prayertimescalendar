@@ -2,7 +2,7 @@
   {
     "uke": 14,
     "gregOrisk": "5–11 apr 2027",
-    "hijri": "7–13 Shawwal 1448",
+    "hijri": "28 Shawwal – 4 Dhul Qa'da 1448",
     "tema": "Profeten Yusuf (AS) – Sabr i fengsel",
     "spesiell": null,
     "quran": {
@@ -19,7 +19,7 @@
   {
     "uke": 15,
     "gregOrisk": "12–18 apr 2027",
-    "hijri": "14–20 Shawwal 1448",
+    "hijri": "5–11 Dhul Qa'da 1448",
     "tema": "Ensomhet og Khilwa – Hellig stillhet",
     "spesiell": null,
     "quran": {
@@ -36,7 +36,7 @@
   {
     "uke": 16,
     "gregOrisk": "19–25 apr 2027",
-    "hijri": "21–27 Shawwal 1448",
+    "hijri": "12–18 Dhul Qa'da 1448",
     "tema": "Å finne mening midt i ventetiden",
     "spesiell": null,
     "quran": {
@@ -53,7 +53,7 @@
   {
     "uke": 17,
     "gregOrisk": "26 apr – 2 mai 2027",
-    "hijri": "28 Shawwal – 5 Dhul Qa'da 1448",
+    "hijri": "19–25 Dhul Qa'da 1448",
     "tema": "Dhikr – Allah som indre kompanjong",
     "spesiell": null,
     "quran": {
@@ -70,7 +70,7 @@
   {
     "uke": 18,
     "gregOrisk": "3–9 mai 2027",
-    "hijri": "6–12 Dhul Qa'da 1448",
+    "hijri": "26 Dhul Qa'da – 3 Dhul Hijja 1448",
     "tema": "Allahs tidspunkt – å gi slipp på kontroll",
     "spesiell": null,
     "quran": {
@@ -87,60 +87,9 @@
   {
     "uke": 19,
     "gregOrisk": "10–16 mai 2027",
-    "hijri": "13–19 Dhul Qa'da 1448",
-    "tema": "Sinne og Sabr – Den profetiske modellen",
-    "spesiell": null,
-    "quran": {
-      "tekst": "Og de som legger bånd på sin vrede, og tilgir folk – Allah elsker de gode.",
-      "referanse": "Ali Imran 3:134"
-    },
-    "hadith": {
-      "tekst": "Den sterke er ikke den som overvinner andre i bryting. Den sterke er den som behersker seg selv i vrede.",
-      "kilde": "Sahih al-Bukhari, nr. 6114"
-    },
-    "visdom": "Sinnet som man gir mat blir et monster. Sinnet man lar sulte, dør stille. Du bestemmer hvem som vinner.",
-    "visdomKilde": "Inspirert av Al-Ghazali, Ihya Ulum ad-Din"
-  },
-  {
-    "uke": 20,
-    "gregOrisk": "17–23 mai 2027",
-    "hijri": "20–26 Dhul Qa'da 1448",
-    "tema": "Salah som anker – Bønn i mørke tider",
-    "spesiell": null,
-    "quran": {
-      "tekst": "Søk hjelp i tålmodighet og bønn. Det er sannelig tungt – unntatt for de ydmyke, som respekterer sin Herre og vet at de vil møte Ham.",
-      "referanse": "Al-Baqarah 2:45–46"
-    },
-    "hadith": {
-      "tekst": "Da noe bekymret Profeten ﷺ, søkte han tilflukt i bønn.",
-      "kilde": "Sunan Abi Dawud, nr. 1319"
-    },
-    "visdom": "Fem ganger om dagen stiller du deg foran Skaperen av universer. Ingen dommer, ingen advokat. Bare du og Han. Det er det sterkeste juridiske forumet som finnes.",
-    "visdomKilde": "Inspirert av Sahl al-Tustari"
-  },
-  {
-    "uke": 21,
-    "gregOrisk": "24–30 mai 2027",
-    "hijri": "27 Dhul Qa'da – 4 Dhul Hijja 1448",
-    "tema": "Sabr og skam – Helbredelse fra innsiden",
-    "spesiell": null,
-    "quran": {
-      "tekst": "Ikke mist motet og ikke sørg, for dere er de øverste om dere er (sanne) troende.",
-      "referanse": "Ali Imran 3:139"
-    },
-    "hadith": {
-      "tekst": "Ingen ulykke rammer den troende – ikke engang en torn som stikker ham – uten at Allah sletter noen av hans synder for det.",
-      "kilde": "Sahih al-Bukhari, nr. 5641"
-    },
-    "visdom": "Skam forteller deg at du har gjort noe galt. Det er nyttig én gang. Etter det bør du legge den ned – for Allah. Skam som sitter evig er ikke anger, det er stolthet i omvendt form.",
-    "visdomKilde": "Inspirert av Ibn Qayyim al-Jawziyyah, Ad-Da' wa ad-Dawa'"
-  },
-  {
-    "uke": 22,
-    "gregOrisk": "31 mai – 6 jun 2027",
     "hijri": "4–10 Dhul Hijja 1448",
     "tema": "★ EID AL-ADHA – Ibrahims Sabr og overgivelse",
-    "spesiell": "EID AL-ADHA 6. juni 2027 (10. Dhul Hijja). Arafat-dagen 5. juni.",
+    "spesiell": "EID AL-ADHA 16. mai 2027 (10. Dhul Hijja). Arafat-dagen 15. mai.",
     "quran": {
       "tekst": "Og da de begge hadde overgidd seg og han hadde lagt ham flat med ansiktet ned, ropte Vi til ham: 'Å Ibrahim! Du har oppfylt synet!' Vi belønner slik de som gjør godt.",
       "referanse": "As-Saffat 37:103–105"
@@ -153,8 +102,8 @@
     "visdomKilde": "Inspirert av islamsk teologisk tradisjon om Ibrahim (AS)"
   },
   {
-    "uke": 23,
-    "gregOrisk": "7–13 jun 2027",
+    "uke": 20,
+    "gregOrisk": "17–23 mai 2027",
     "hijri": "11–17 Dhul Hijja 1448",
     "tema": "Etter offeret – Tawakkul og overgivelse",
     "spesiell": null,
@@ -170,28 +119,11 @@
     "visdomKilde": "Ibn Ata'illah al-Iskandari, Al-Hikam"
   },
   {
-    "uke": 24,
-    "gregOrisk": "14–20 jun 2027",
+    "uke": 21,
+    "gregOrisk": "24–30 mai 2027",
     "hijri": "18–24 Dhul Hijja 1448",
-    "tema": "Shukr – Takknemlighet midt i prøvelsen",
-    "spesiell": null,
-    "quran": {
-      "tekst": "Og husker dere når deres Herre kunngjorde: 'Hvis dere er takknemlige, vil Jeg gi dere mer. Men hvis dere er utakknemlige, sannelig, Min straff er hard.'",
-      "referanse": "Ibrahim 14:7"
-    },
-    "hadith": {
-      "tekst": "Allah er tilfreds med sin tjeneste når han spiser og takker Ham for det, og drikker og takker Ham for det.",
-      "kilde": "Sahih Muslim, nr. 2734"
-    },
-    "visdom": "Takknemlighet er ikke å late som alt er bra. Det er å finne det som fortsatt er bra midt i det som er vanskelig. Det er en disiplin – og det forandrer hjertet.",
-    "visdomKilde": "Inspirert av Al-Ghazali, Ihya Ulum ad-Din"
-  },
-  {
-    "uke": 25,
-    "gregOrisk": "21–27 jun 2027",
-    "hijri": "25 Dhul Hijja 1448 – 1 Muharram 1449",
     "tema": "Årsavslutning i Dhul Hijja – Muhasabah",
-    "spesiell": "Hijri nyttår 1449 begynner ca. 26. juni (lørdag). Slutten av uke 25.",
+    "spesiell": null,
     "quran": {
       "tekst": "Sannelig, i skapelsen av himlene og jorden, og i vekslingen mellom natt og dag, er det tegn for folk med forstand – de som husker Allah stående, sittende og liggende, og som tenker over skapelsen av himlene og jorden: 'Herre! Du skapte ikke dette forgjeves!'",
       "referanse": "Ali Imran 3:190–191"
@@ -204,11 +136,11 @@
     "visdomKilde": "Inspirert av islamsk etikk om tid (waqt)"
   },
   {
-    "uke": 26,
-    "gregOrisk": "28 jun – 4 jul 2027",
-    "hijri": "3–9 Muharram 1449",
+    "uke": 22,
+    "gregOrisk": "31 mai – 6 jun 2027",
+    "hijri": "25 Dhul Hijja 1448 – 1 Muharram 1449",
     "tema": "★ Nytt Hijri-år 1449 – En ny begynnelse",
-    "spesiell": "Islamsk nyttår 1449 AH. Muharram er en av de fire hellige månedene.",
+    "spesiell": "Islamsk nyttår 1449 AH. 1. Muharram ≈ 6. juni 2027. Muharram er en av de fire hellige månedene.",
     "quran": {
       "tekst": "Sannelig, antallet måneder hos Allah er tolv måneder, fastsatt i Allahs skrift den dag Han skapte himlene og jorden. Fire av dem er hellige. Det er den rette religionen. Gjør ikke urett mot dere selv i dem.",
       "referanse": "At-Tawbah 9:36"
@@ -219,5 +151,73 @@
     },
     "visdom": "Hvert nyttår er et blank ark – ikke fordi fortiden er glemt, men fordi Allah er Al-Ghaffar: Den som dekker til. Et nytt år er en ny nåde.",
     "visdomKilde": "Inspirert av islamsk tradisjon om ny begynnelse"
+  },
+  {
+    "uke": 23,
+    "gregOrisk": "7–13 jun 2027",
+    "hijri": "2–8 Muharram 1449",
+    "tema": "Sinne og Sabr – Den profetiske modellen",
+    "spesiell": null,
+    "quran": {
+      "tekst": "Og de som legger bånd på sin vrede, og tilgir folk – Allah elsker de gode.",
+      "referanse": "Ali Imran 3:134"
+    },
+    "hadith": {
+      "tekst": "Den sterke er ikke den som overvinner andre i bryting. Den sterke er den som behersker seg selv i vrede.",
+      "kilde": "Sahih al-Bukhari, nr. 6114"
+    },
+    "visdom": "Sinnet som man gir mat blir et monster. Sinnet man lar sulte, dør stille. Du bestemmer hvem som vinner.",
+    "visdomKilde": "Inspirert av Al-Ghazali, Ihya Ulum ad-Din"
+  },
+  {
+    "uke": 24,
+    "gregOrisk": "14–20 jun 2027",
+    "hijri": "9–15 Muharram 1449",
+    "tema": "★ ASHURA – Nåde, faste og Musa (AS)",
+    "spesiell": "Ashura – 10. Muharram 1449, ca. 15. juni 2027 (tirsdag).",
+    "quran": {
+      "tekst": "Og Vi reddet Israels barn fra den nedverdigende straffen, fra Farao – han var overmodig og en av de overdrevne.",
+      "referanse": "Ad-Dukhan 44:30–31"
+    },
+    "hadith": {
+      "tekst": "Profeten ﷺ kom til Medina og fant at jødene faster på Ashura-dagen. Han spurte: 'Hva er dette?' De sa: 'Det er en god dag – det er dagen da Allah reddet Israels barn fra sin fiende, og Musa fastet den.' Han sa: 'Jeg har mer rett til Musa enn dere,' og han fastet og beordret andre til å faste.",
+      "kilde": "Sahih al-Bukhari, nr. 2004"
+    },
+    "visdom": "Ashura minner om at Allah griper inn for dem som er undertrykket. Havet deler seg. Murer faller. Historien er full av Allahs inngripen for dem som holdt fast i tro.",
+    "visdomKilde": "Inspirert av tafsir-tradisjon om Musa (AS)"
+  },
+  {
+    "uke": 25,
+    "gregOrisk": "21–27 jun 2027",
+    "hijri": "16–22 Muharram 1449",
+    "tema": "Salah som anker – Bønn i mørke tider",
+    "spesiell": null,
+    "quran": {
+      "tekst": "Søk hjelp i tålmodighet og bønn. Det er sannelig tungt – unntatt for de ydmyke, som respekterer sin Herre og vet at de vil møte Ham.",
+      "referanse": "Al-Baqarah 2:45–46"
+    },
+    "hadith": {
+      "tekst": "Da noe bekymret Profeten ﷺ, søkte han tilflukt i bønn.",
+      "kilde": "Sunan Abi Dawud, nr. 1319"
+    },
+    "visdom": "Fem ganger om dagen stiller du deg foran Skaperen av universer. Ingen dommer, ingen advokat. Bare du og Han. Det er det sterkeste juridiske forumet som finnes.",
+    "visdomKilde": "Inspirert av Sahl al-Tustari"
+  },
+  {
+    "uke": 26,
+    "gregOrisk": "28 jun – 4 jul 2027",
+    "hijri": "23–29 Muharram 1449",
+    "tema": "Sabr og skam – Helbredelse fra innsiden",
+    "spesiell": null,
+    "quran": {
+      "tekst": "Ikke mist motet og ikke sørg, for dere er de øverste om dere er (sanne) troende.",
+      "referanse": "Ali Imran 3:139"
+    },
+    "hadith": {
+      "tekst": "Ingen ulykke rammer den troende – ikke engang en torn som stikker ham – uten at Allah sletter noen av hans synder for det.",
+      "kilde": "Sahih al-Bukhari, nr. 5641"
+    },
+    "visdom": "Skam forteller deg at du har gjort noe galt. Det er nyttig én gang. Etter det bør du legge den ned – for Allah. Skam som sitter evig er ikke anger, det er stolthet i omvendt form.",
+    "visdomKilde": "Inspirert av Ibn Qayyim al-Jawziyyah, Ad-Da' wa ad-Dawa'"
   }
 ]
