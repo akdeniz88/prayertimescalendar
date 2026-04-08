@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-bygg_kalender.py  (v4 — HTML A4 liggende, 2 uker per ark, 13 byer)
+bygg_kalender.py  (v4 — HTML A4 liggende, 2 uker per ark, 10 byer)
 --------------------------------------------------------------------
 Genererer to A4-sider per ark (26 ark = 52 sider):
-  Side 1 (bønnetider): 13 byer × 6 bønner × 14 dager (2 uker side om side)
+  Side 1 (bønnetider): 10 byer × 6 bønner × 14 dager (2 uker side om side)
   Side 2 (innhold):    2 uker med Koranvers, Hadith, Visdomsord + bonus
 
 Output:
@@ -24,9 +24,9 @@ UKER_MAPPE   = BASE / "uker"
 MASTER       = BASE / "kalender-2027.html"
 
 BYER      = ["Oslo", "Hønefoss", "Drammen", "Fredrikstad", "Hamar", "Skien",
-             "Kristiansand", "Stavanger", "Bergen", "Trondheim", "Ålesund", "Bodø", "Tromsø"]
+             "Kristiansand", "Stavanger", "Bergen", "Trondheim"]
 BYER_KORT = ["Oslo", "Hønefoss", "Drammen", "F.stad", "Hamar", "Skien",
-             "K.sand", "Stavanger", "Bergen", "Trondh.", "Ålesund", "Bodø", "Tromsø"]
+             "K.sand", "Stavanger", "Bergen", "Trondh."]
 PKEYS  = ["Fajr", "Sunrise", "Dhuhr", "Asr", "Maghrib", "Isha"]
 PNAMES = ["Fajr", "Sol.↑", "Dhuhr", "Asr", "Maghr.", "Isha"]
 PCLS   = ["fajr", "solopp",  "dhuhr", "asr", "maghrib", "isha"]
@@ -102,8 +102,8 @@ table.bt {
 }
 table.bt thead th {
   background: #1a1a2e; color: #fff;
-  font-size: 8.5pt; font-weight: bold;
-  text-align: center; padding: .8mm .5mm;
+  font-size: 7pt; font-weight: bold;
+  text-align: center; padding: .5mm .3mm;
   border: .3pt solid #111;
   overflow: hidden;
 }
@@ -116,9 +116,9 @@ table.bt thead th.wl {
   letter-spacing: .3pt; color: #f7e636; padding: .5mm;
 }
 
-.dhn { font-size: 7pt; font-weight: 900; display: block; }
-.dhg { font-size: 5.5pt; display: block; opacity: .85; }
-.dhh { font-size: 4.5pt; display: block; opacity: .65; }
+.dhn { font-size: 6pt; font-weight: 900; display: block; }
+.dhg { font-size: 5pt; display: block; opacity: .85; }
+.dhh { font-size: 4pt; display: block; opacity: .65; }
 
 td.by {
   writing-mode: vertical-rl;
@@ -127,19 +127,19 @@ td.by {
   vertical-align: middle;
   background: #edf0fc;
   border: .3pt solid #b4bde0;
-  width: 7mm;
-  padding: .3mm;
-  font-size: 6pt;
+  width: 6mm;
+  padding: .15mm;
+  font-size: 5pt;
   font-weight: bold;
   color: #1a1a2e;
 }
 
 td.bn {
-  font-size: 6pt; font-weight: bold;
-  padding: .3mm .5mm;
+  font-size: 5pt; font-weight: bold;
+  padding: .15mm .3mm;
   border: .2pt solid #e0e0e0;
-  width: 9mm; white-space: nowrap;
-  line-height: 1.15;
+  width: 8mm; white-space: nowrap;
+  line-height: 1.05;
 }
 .fajr    { color: #7B3000; }
 .solopp  { color: #1B5E20; }
@@ -149,10 +149,10 @@ td.bn {
 .isha    { color: #1a1a2e; }
 
 td.t {
-  font-size: 6.5pt; text-align: center;
-  padding: .3mm .2mm;
+  font-size: 5.5pt; text-align: center;
+  padding: .15mm .1mm;
   border: .2pt solid #e8e8e8;
-  line-height: 1.15;
+  line-height: 1.05;
 }
 td.wsep { background: #f0f0f0; width: 1.5mm; border-left: .8pt solid #f7e636; border-right: .8pt solid #f7e636; }
 tr.de td.t, tr.de td.bn { background: #f4f6fe; }
