@@ -29,6 +29,7 @@ from pathlib import Path
 
 HERE     = Path(__file__).resolve().parent
 LOGO     = HERE.parent / "logo.png"
+COVER_IMG = HERE.parent / "cover.png"
 PRAYER   = HERE / "data" / "prayer_times_2027.json"
 REM_NO   = HERE / "data" / "reminders_no.json"
 QUOTES   = HERE / "data" / "quotes.json"
@@ -361,54 +362,15 @@ body { font-family: Arial, Helvetica, sans-serif; font-size: 6pt; color: #111; }
   background: #fff;
   print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3mm;
-  border: 1.5mm solid #1a3a5c;
+  position: relative;
 }
-.cover-stripe {
+.cover-bg {
   position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 14mm;
-  background: #1a3a5c;
-  print-color-adjust: exact;
-  -webkit-print-color-adjust: exact;
-}
-.cover-stripe-bottom {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 8mm;
-  background: #1a3a5c;
-  print-color-adjust: exact;
-  -webkit-print-color-adjust: exact;
-}
-.cover-logo {
-  width: 55mm;
-  height: auto;
-  position: relative;
-  z-index: 1;
-  margin-top: 8mm;
-}
-.cover-title {
-  color: #1a3a5c;
-  font-size: 13pt;
-  font-weight: 900;
-  text-align: center;
-  letter-spacing: 0.04em;
-  line-height: 1.3;
-  position: relative;
-  z-index: 1;
-}
-.cover-year {
-  color: #2c5f8a;
-  font-size: 9pt;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 0.1em;
-  position: relative;
-  z-index: 1;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
 }
 
 /* ────────────────────────── EMPTY PAGE ───────────────────────────────── */
@@ -632,19 +594,12 @@ def back_page(date_str: str, rem: dict, page_num: int = 0) -> str:
     )
 
 
-def cover_page(logo_uri: str) -> str:
-    """Hard cover page: logo + title."""
-    logo_img = (
-        f'<img src="{logo_uri}" class="cover-logo" alt="Fengselsimamene">'
-        if logo_uri else ""
-    )
+def cover_page(logo_uri: str, cover_uri: str = "") -> str:
+    """Hard cover page: background image only."""
+    cover_bg = f'<div class="cover-bg" style="background-image:url({cover_uri})"></div>' if cover_uri else ""
     return (
         '<div class="page cover">'
-        '<div class="cover-stripe"></div>'
-        '<div class="cover-stripe-bottom"></div>'
-        f"{logo_img}"
-        '<div class="cover-title">Bønnetidskalender</div>'
-        '<div class="cover-year">2027</div>'
+        f"{cover_bg}"
         "</div>"
     )
 
@@ -705,22 +660,22 @@ def calendar_info_page() -> str:
 
         "<p>Denne bønnetidskalenderen er laget spesielt for deg som er innsatt i et norsk "
         "fengsel. For hvert eneste av årets 365 dager finner du to sider: én med bønnetider "
-        "og én med en islamsk refleksjon.</p>"
+        "og én med en islamsk refleksjon. Alle sidene er nummerert, og kalenderen åpner med "
+        "en innholdsfortegnelse over alle duaene.</p>"
 
         "<h3>Forsiden – bønnetider</h3>"
         "<ul>"
         "<li><b>28 norske fengsler og byer</b> – Fajr, Soloppgang, Zuhr, Asr, Maghrib og Isha</li>"
         "<li>Gregoriansk dato, ukedag og <b>hijri-dato</b> (islamsk kalender)</li>"
         "<li>Et vers fra Koranen eller et hadith øverst på siden</li>"
-        "<li>Vise ord fra inspirerende personligheter gjennom historien</li>"
+        "<li><b>Vise ord</b> fra inspirerende personligheter gjennom historien – et nytt sitat hver dag</li>"
         "</ul>"
 
         "<h3>Baksiden – daglig refleksjon</h3>"
         "<ul>"
         "<li>Et islamsk tema med tekst på norsk</li>"
-        "<li>En <b>dua</b> (bønn) på arabisk</li>"
-        "<li>Latinsk <b>translitterasjon</b> – slik at du kan lese bønnen høyt, "
-        "selv uten arabiskkunnskap</li>"
+        "<li>Annenhver dag: en <b>dua</b> (bønn) i <b>latinsk translitterasjon</b> – "
+        "slik at du kan lese og uttale bønnen, uansett språkbakgrunn</li>"
         "</ul>"
 
         '<div class="highlight-box">'
@@ -786,6 +741,17 @@ def main():
     else:
         print(f"Warning: logo not found at {LOGO}")
 
+    # Embed cover image as inline base64 for the hard cover page
+    cover_uri = ""
+    if COVER_IMG.exists():
+        ext = COVER_IMG.suffix.lower()
+        mime = "image/jpeg" if ext in (".jpg", ".jpeg", ".jfif") else "image/png"
+        cover_b64 = base64.b64encode(COVER_IMG.read_bytes()).decode()
+        cover_uri = f"data:{mime};base64,{cover_b64}"
+        print(f"Cover: {COVER_IMG.name} ({len(cover_b64)//1024} KB base64)")
+    else:
+        print(f"Warning: cover image not found at {COVER_IMG}")
+
     if not PRAYER.exists():
         print(f"ERROR: {PRAYER} not found.\nRun 02_prayer_times.py first.")
         raise SystemExit(1)
@@ -815,7 +781,7 @@ def main():
     pages: list[str] = []
 
     # ── Front matter ──
-    pages.append(cover_page(logo_uri))       # unnumbered
+    pages.append(cover_page(logo_uri, cover_uri))       # p1: hard cover
     pages.append(org_info_page())            # unnumbered
     pages.append(empty_page())               # unnumbered (back of org)
     pages.append(calendar_info_page())       # unnumbered
