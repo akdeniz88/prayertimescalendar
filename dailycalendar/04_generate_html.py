@@ -6,15 +6,14 @@ Generates a print-ready HTML daily calendar for 2027.
 Page size: 127 mm × 102 mm (landscape-ish).
 
 Each physical day = 2 HTML pages in the output:
-  Front – header (Ayet/Hadis | Date | Olay) + 28-city prayer times table
-  Back  – Islamic reminder (Konu + Metin + Dua) – translated to Norwegian
+  Front – header (Ayah/Hadith | Date | Event) + 28-city prayer times table
+  Back  – Islamic reminder (Topic + Text + Dua)
 
 Page order in HTML: front₁, back₁, front₂, back₂ … (duplex-friendly)
 
 Reads:
   dailycalendar/data/prayer_times_2027.json
-  dailycalendar/data/reminders_no.json    (preferred)
-  dailycalendar/data/reminders_tr.json    (fallback if translation missing)
+  dailycalendar/data/reminders_no.json
 
 Output:
   dailycalendar/output/kalender-2027-daglig.html
@@ -23,6 +22,7 @@ Output:
 import base64
 import json
 import re
+import sys
 from datetime import date as _date
 from html import escape as esc
 from pathlib import Path
@@ -31,19 +31,18 @@ HERE     = Path(__file__).resolve().parent
 LOGO     = HERE.parent / "logo.png"
 PRAYER   = HERE / "data" / "prayer_times_2027.json"
 REM_NO   = HERE / "data" / "reminders_no.json"
-REM_TR   = HERE / "data" / "reminders_tr.json"
 QUOTES   = HERE / "data" / "quotes.json"
 OUTPUT   = HERE / "output" / "kalender-2027-daglig.html"
 
 # Cities in Norwegian alphabetical order (Æ, Ø, Å come after Z)
 CITY_LEFT = [
-    "Badsø", "Bastøy", "Bergen", "Bjørgvin", "Bodø", "Eidsberg",
+    "Bastøy", "Bergen", "Bjørgvin", "Bodø", "Eidsberg",
     "Froland", "Halden", "Hamar", "Hustad", "Ila", "Kongsvinger",
-    "Kroksrud", "Mandal",
+    "Kroksrud", "Mandal", "Ringerike",
 ]
 CITY_RIGHT = [
-    "Ringerike", "Sandeid", "Sarpsborg", "Sem", "Skien", "Stavanger",
-    "Tromsø", "Trondheim", "Trøgstad", "Tønsberg", "Ullersmo", "Vik",
+    "Sandeid", "Sarpsborg", "Sem", "Skien", "Stavanger",
+    "Tromsø", "Trondheim", "Trøgstad", "Tønsberg", "Ullersmo", "Vadsø", "Vik",
     "Ålesund", "Åna",
 ]
 
@@ -84,14 +83,14 @@ body { font-family: Arial, Helvetica, sans-serif; font-size: 6pt; color: #111; }
   gap: 1mm;
 }
 
-/* Left column – Ayet / Hadis */
-.col-ayet {
+/* Left column – Ayah / Hadith */
+.col-ayah {
   width: 36mm;
   padding: 0.5mm 1mm 0.5mm 0;
   border-right: 0.2mm solid #c0cfe0;
   overflow: hidden;
 }
-.col-ayet h4 {
+.col-ayah h4 {
   font-size: 4.5pt;
   font-weight: bold;
   color: #1a3a5c;
@@ -99,7 +98,7 @@ body { font-family: Arial, Helvetica, sans-serif; font-size: 6pt; color: #111; }
   letter-spacing: 0.02em;
   margin-bottom: 0.5mm;
 }
-.col-ayet p {
+.col-ayah p {
   font-size: 5pt;
   font-style: italic;
   color: #333;
@@ -142,14 +141,14 @@ body { font-family: Arial, Helvetica, sans-serif; font-size: 6pt; color: #111; }
   margin-top: 0.3mm;
 }
 
-/* Right column – Olay (historical events) */
-.col-olay {
+/* Right column – Event (historical events) */
+.col-event {
   width: 36mm;
   padding: 0.5mm 0 0.5mm 1mm;
   border-left: 0.2mm solid #c0cfe0;
   overflow: hidden;
 }
-.col-olay h4 {
+.col-event h4 {
   font-size: 4.5pt;
   font-weight: bold;
   color: #1a3a5c;
@@ -157,13 +156,13 @@ body { font-family: Arial, Helvetica, sans-serif; font-size: 6pt; color: #111; }
   letter-spacing: 0.02em;
   margin-bottom: 0.5mm;
 }
-.col-olay p {
+.col-event p {
   font-size: 5pt;
   color: #333;
   line-height: 1.35;
 }
-.col-olay p.qt { font-style: italic; }
-.col-olay p.qa {
+.col-event p.qt { font-style: italic; }
+.col-event p.qa {
   font-size: 4.5pt;
   color: #666;
   text-align: right;
@@ -244,7 +243,7 @@ body { font-family: Arial, Helvetica, sans-serif; font-size: 6pt; color: #111; }
   flex-direction: column;
   background: #fafcff;
 }
-.back-konu {
+.back-topic {
   font-size: 7.5pt;
   font-weight: bold;
   color: #1a3a5c;
@@ -254,7 +253,7 @@ body { font-family: Arial, Helvetica, sans-serif; font-size: 6pt; color: #111; }
   margin-bottom: 1.5mm;
   line-height: 1.25;
 }
-.back-metin {
+.back-text {
   font-size: 5.5pt;
   line-height: 1.4;
   text-align: justify;
@@ -293,6 +292,68 @@ body { font-family: Arial, Helvetica, sans-serif; font-size: 6pt; color: #111; }
   margin-top: 0.5mm;
   border-top: 0.15mm solid #b0c8e8;
   padding-top: 0.4mm;
+}
+.dua-source {
+  font-size: 4.2pt;
+  color: #7a8fa6;
+  font-style: normal;
+  margin-top: 0.5mm;
+  line-height: 1.3;
+}
+.translit-badge {
+  display: inline-block;
+  background: #1a3a5c;
+  color: #fff;
+  font-weight: 700;
+  font-size: 5pt;
+  padding: 0.3mm 1mm;
+  border-radius: 0.6mm;
+  letter-spacing: 0.02em;
+  margin: 0.5mm 0;
+}
+/* ── Page number (bottom-right corner) ── */
+.page-num {
+  position: absolute;
+  bottom: 0.8mm;
+  right: 1.5mm;
+  font-size: 4pt;
+  color: #7a8fa6;
+}
+.page.back .page-num {
+  font-size: 5.5pt;
+  color: #2c5f8a;
+}
+
+/* ──────────────────────── DUA TABLE OF CONTENTS ──────────────────────── */
+.toc-page {
+  padding: 2mm 2mm 1mm;
+  background: #fafcff;
+}
+.toc-title {
+  font-size: 8pt;
+  font-weight: 900;
+  color: #1a3a5c;
+  text-align: center;
+  border-bottom: 0.5mm solid #1a3a5c;
+  padding-bottom: 0.8mm;
+  margin-bottom: 1.5mm;
+  letter-spacing: 0.02em;
+}
+.toc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0 2mm;
+  font-size: 4.5pt;
+  line-height: 1.55;
+}
+.toc-entry {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.toc-pg {
+  color: #2c5f8a;
+  font-weight: 600;
 }
 
 /* ────────────────────────── COVER PAGE ───────────────────────────────── */
@@ -459,13 +520,13 @@ def prayer_table(cities: list[str], city_data: dict) -> str:
     )
 
 
-def front_page(date_str: str, meta: dict, rem: dict, quote_entry: dict = None) -> str:
+def front_page(date_str: str, meta: dict, rem: dict, quote_entry: dict = None, page_num: int = 0) -> str:
     if quote_entry is None:
         quote_entry = {}
     hijri    = meta.get("hijri", {})
-    ayet     = rem.get("ayet_hadis", "")
+    ayah     = rem.get("ayah_hadith", "")
     q_title  = quote_entry.get("title", "Vise ord")
-    q_text   = quote_entry.get("quote", rem.get("olay", ""))
+    q_text   = quote_entry.get("quote", rem.get("event", ""))
     q_author = quote_entry.get("author", "")
     cities_data = meta.get("cities", {})
 
@@ -478,9 +539,9 @@ def front_page(date_str: str, meta: dict, rem: dict, quote_entry: dict = None) -
 
     header = f"""
 <div class="header">
-  <div class="col-ayet">
-    <h4>Ayet / Hadis</h4>
-    <p>{esc(ayet)}</p>
+  <div class="col-ayah">
+    <h4>Ayah / Hadith</h4>
+    <p>{esc(ayah)}</p>
   </div>
   <div class="col-date">
     <div class="date-num">{meta.get('day', ''):02d}</div>
@@ -489,7 +550,7 @@ def front_page(date_str: str, meta: dict, rem: dict, quote_entry: dict = None) -
     <div class="date-hijri">{esc(hijri_str)}</div>
     <div class="date-doy">Uke {week_num} &nbsp;·&nbsp; Dag {doy} &nbsp;·&nbsp; {days_left} igjen</div>
   </div>
-  <div class="col-olay">
+  <div class="col-event">
     <h4>{esc(q_title)}</h4>
     <p class="qt">{esc(q_text)}</p>
     {f'<p class="qa">— {esc(q_author)}</p>' if q_author else ''}
@@ -503,28 +564,39 @@ def front_page(date_str: str, meta: dict, rem: dict, quote_entry: dict = None) -
   <div class="prayer-wrap">{prayer_table(CITY_RIGHT, cities_data)}</div>
 </div>"""
 
+    pn_tag = f'<div class="page-num">{page_num}</div>' if page_num else ""
+
     return (
         f'<div class="page front" data-date="{date_str}">'
         f"{header}{prayers}"
+        f"{pn_tag}"
         f"</div>"
     )
 
 
-def back_page(date_str: str, rem: dict) -> str:
-    konu         = rem.get("konu",  "")
-    metin        = rem.get("metin", "")
+def back_page(date_str: str, rem: dict, page_num: int = 0) -> str:
+    topic        = rem.get("topic", "")
+    text         = rem.get("text",  "")
     dua          = rem.get("dua",   "")
     dua_translit = rem.get("dua_translit", "")
 
     def render_line(line: str) -> str:
-        """Escape HTML then convert **bold** and _italic_ markers."""
+        """Escape HTML then convert **bold**, _italic_, and [translit] markers."""
         s = esc(line)
         s = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', s)
         s = re.sub(r'_(.+?)_', r'<em>\1</em>', s)
+        s = re.sub(
+            r'\[translit\](.+?)\[/translit\]',
+            r'<span class="translit-badge">\1</span>',
+            s,
+        )
         return s
 
-    # Convert newlines in metin to <br> tags, applying inline formatting
-    metin_html = "<br>".join(render_line(line) for line in metin.splitlines()) if metin else ""
+    # Convert newlines in text to <br> tags, applying inline formatting
+    text_html = "<br>".join(render_line(line) for line in text.splitlines()) if text else ""
+
+    dua_source = rem.get("dua_source", "")
+    dua_grade  = rem.get("dua_grade",  "")
 
     dua_block = ""
     if dua:
@@ -532,21 +604,30 @@ def back_page(date_str: str, rem: dict) -> str:
             f'<div class="dua-translit">{esc(dua_translit)}</div>'
             if dua_translit else ""
         )
+        source_parts = [p for p in [dua_source, dua_grade] if p]
+        source_html = (
+            f'<div class="dua-source">{esc(" · ".join(source_parts))}</div>'
+            if source_parts else ""
+        )
         dua_block = (
             '<div class="back-dua">'
             '<div class="dua-label">Dua</div>'
             f'<div class="dua-text">{esc(dua)}</div>'
             f'{translit_html}'
+            f'{source_html}'
             "</div>"
         )
+
+    pn_tag = f'<div class="page-num">{page_num}</div>' if page_num else ""
 
     return (
         f'<div class="page back" data-date="{date_str}">'
         f'<div class="back">'
-        f'<div class="back-konu">{esc(konu)}</div>'
-        f'<div class="back-metin">{metin_html}</div>'
+        f'<div class="back-topic">{esc(topic)}</div>'
+        f'<div class="back-text">{text_html}</div>'
         f"{dua_block}"
         f"</div>"
+        f"{pn_tag}"
         f"</div>"
     )
 
@@ -670,7 +751,30 @@ def build_html(pages_html: list[str], logo_uri: str = "") -> str:
     )
 
 
+def dua_toc_page(entries: list[tuple[int, str]], label: str) -> str:
+    """Render one Dua TOC page with entries as (page_num, title)."""
+    rows = "".join(
+        (
+            f'<div class="toc-entry">'
+            f'<span class="toc-pg">{n:03d}</span>&ensp;{esc(t)}</div>'
+        )
+        for n, t in entries
+    )
+    return (
+        f'<div class="page toc-page">'
+        f'<div class="toc-title">{esc(label)}</div>'
+        f'<div class="toc-grid">{rows}</div>'
+        f"</div>"
+    )
+
+
 def main():
+    for _stream in (sys.stdout, sys.stderr):
+        try:
+            _stream.reconfigure(encoding="utf-8")
+        except Exception:
+            pass
+
     OUTPUT.parent.mkdir(exist_ok=True)
 
     # Embed logo as inline base64 so the watermark works when printing / offline
@@ -697,41 +801,48 @@ def main():
     else:
         print("Note: quotes.json not found – run 06_fetch_quotes.py")
 
-    # Load both sources; Norwegian preferred per day, Turkish as fallback
-    rem_tr: dict = {}
     rem_no: dict = {}
-    if REM_TR.exists():
-        rem_tr = json.loads(REM_TR.read_text(encoding="utf-8"))
     if REM_NO.exists():
         rem_no = json.loads(REM_NO.read_text(encoding="utf-8"))
-        print(f"Reminders: {len(rem_no)} Norwegian + {len(rem_tr) - len(rem_no)} Turkish fallback entries")
-    elif rem_tr:
-        print(f"Reminders: {len(rem_tr)} Turkish entries (translation not yet run)")
+        print(f"Reminders: {len(rem_no)} entries")
     else:
-        print(f"ERROR: No reminder data found.\nRun 01_extract_reminders.py first.")
+        print(f"ERROR: No reminder data found.\nRun 08_fetch_hadith_reminders.py first.")
         raise SystemExit(1)
 
     def get_reminder(date_str: str) -> dict:
-        """Return Norwegian if translated, else Turkish fallback."""
-        return rem_no.get(date_str) or rem_tr.get(date_str, {})
+        return rem_no.get(date_str, {})
 
     pages: list[str] = []
 
-    # ── Front matter (6 pages before the calendar) ──
-    pages.append(cover_page(logo_uri))       # p1: hard cover
-    pages.append(org_info_page())            # p2: about Fengselsimamene
-    pages.append(empty_page())               # p4: back of org page (blank)
-    pages.append(calendar_info_page())       # p5: about this calendar
-    pages.append(empty_page())               # p6: back of calendar info (blank)
+    # ── Front matter ──
+    pages.append(cover_page(logo_uri))       # unnumbered
+    pages.append(org_info_page())            # unnumbered
+    pages.append(empty_page())               # unnumbered (back of org)
+    pages.append(calendar_info_page())       # unnumbered
+    pages.append(empty_page())               # unnumbered (back of info)
 
     sorted_dates = sorted(prayer_data.keys())
 
-    for date_str in sorted_dates:
+    # ── Dua TOC (table of contents) ──
+    # Compute every dua-day entry: (page_num, dua_title) — 182 entries total.
+    # Page numbering: calendar day i (0-based) → front=2*i+1, back=2*i+2.
+    toc_entries: list[tuple[int, str]] = []
+    for i, date_str in enumerate(sorted_dates):
+        rem = get_reminder(date_str)
+        if i % 2 == 1:  # dua day
+            toc_entries.append((2 * i + 2, rem.get("topic", "")))
+
+    # Split into two TOC pages (one sheet, front+back)
+    mid = (len(toc_entries) + 1) // 2
+    pages.append(dua_toc_page(toc_entries[:mid], "Duas in this Calendar"))
+    pages.append(dua_toc_page(toc_entries[mid:], "Duas in this Calendar (cont.)" if len(toc_entries) > mid else ""))
+
+    for i, date_str in enumerate(sorted_dates):
         meta       = prayer_data[date_str]
         rem        = get_reminder(date_str)
         quote_entry = quotes_data.get(date_str, {})
-        pages.append(front_page(date_str, meta, rem, quote_entry))
-        pages.append(back_page(date_str, rem))
+        pages.append(front_page(date_str, meta, rem, quote_entry, page_num=2*i+1))
+        pages.append(back_page(date_str, rem, page_num=2*i+2))
 
     html = build_html(pages, logo_uri=logo_uri)
     OUTPUT.write_text(html, encoding="utf-8")

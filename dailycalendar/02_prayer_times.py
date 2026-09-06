@@ -11,7 +11,7 @@ High-lat: MidNight (for Tromsø/Badsø at ~70 °N)
 Also computes:
   • Norwegian weekday / month names
   • Hijri date (from AlAdhan response)
-  • Rumi (Ottoman/Julian) date
+  • Julian (Ottoman fiscal) date
 
 Output  : dailycalendar/data/prayer_times_2027.json
 Resumable: already-fetched cities/months are skipped on re-run.
@@ -65,9 +65,9 @@ def hijri_month(name: str) -> str:
     return HIJRI_MND.get(name, name)
 
 
-def gregorian_to_rumi(year: int, month: int, day: int) -> dict:
+def gregorian_to_julian(year: int, month: int, day: int) -> dict:
     """
-    Rumi (Maliye/Ottoman) calendar = Julian calendar with year − 584.
+    Julian calendar with year − 584 (Ottoman fiscal year).
     The Julian calendar is 13 days behind Gregorian in the 21st century.
     """
     d = datetime.date(year, month, day)
@@ -170,7 +170,7 @@ def main():
                                 "month": hijri_month(hijri["month"]["en"]),
                                 "year":  hijri["year"],
                             },
-                            "rumi": gregorian_to_rumi(int(yr_str), month_num, day_no),
+                            "julian": gregorian_to_julian(int(yr_str), month_num, day_no),
                             "cities": {},
                         }
 
